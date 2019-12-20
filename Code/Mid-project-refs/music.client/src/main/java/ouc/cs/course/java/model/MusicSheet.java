@@ -20,7 +20,6 @@ public class MusicSheet {
 		uuid = UUID.randomUUID().toString().replace("-", "");
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		dateCreated = formatter.format(new Date());
-
 	}
 
 	public MusicSheet(String name) {

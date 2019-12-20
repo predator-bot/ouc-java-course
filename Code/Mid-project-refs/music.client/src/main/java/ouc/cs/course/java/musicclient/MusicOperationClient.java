@@ -21,7 +21,8 @@ public class MusicOperationClient {
 	private final String URL_DownloadMusicFile = "http://service.uspacex.com/music.server/downloadMusic";
 	private final String URL_DownloadMusicSheetPicture = "http://service.uspacex.com/music.server/downloadPicture";
 	private final String URL_CreateMusicSheetAndUploadFiles = "http://service.uspacex.com/music.server/upload";
-	private final String URL_QueryAllMusicSheets = "http://service.uspacex.com/music.server/queryMusicSheets?type=all";
+	//private final String URL_QueryAllMusicSheets = "http://service.uspacex.com/music.server/queryMusicSheets?type=all";
+	private final String URL_QueryAllMusicSheets = "http://service.uspacex.com/music.server/queryMusicSheets?type=top20";
 
 	public MusicOperationClient() {
 	}

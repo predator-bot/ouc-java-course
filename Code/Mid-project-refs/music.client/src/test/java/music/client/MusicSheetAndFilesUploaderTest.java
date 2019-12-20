@@ -27,23 +27,25 @@ public class MusicSheetAndFilesUploaderTest {
 		filePaths.add("/Users/xiaodong/Music/guns and roses/Knockin' On Heaven's Door.mp3");
 		*/
 		
-		filePaths.add("/Users/xiaodong/Music/Rock_Chinese/黑豹 - 别去糟蹋.mp3");
-		filePaths.add("/Users/xiaodong/Music/Rock_Chinese/黑豹 - 无地自容.mp3");
-		filePaths.add("/Users/xiaodong/Music/Rock_Chinese/黑豹 - 无是无非.mp3");
-		filePaths.add("/Users/xiaodong/Music/Rock_Chinese/黑豹 - 身不由己.mp3");
-		filePaths.add("/Users/xiaodong/Music/Rock_Chinese/黑豹 - 我们这一代.mp3");
-		filePaths.add("/Users/xiaodong/Music/Rock_Chinese/黑豹 - 别来纠缠我.mp3");
+		filePaths.add("E:/Download/古巨基 - Monica.mp3");
+		filePaths.add("E:/Download/古巨基 - 爱得太迟.mp3");
+		filePaths.add("E:/Download/古巨基 - 爱与诚.mp3");
+		filePaths.add("E:/Download/古巨基 - 告别我的恋人们.mp3");
+		filePaths.add("E:/Download/古巨基 - 花洒.mp3");
+		filePaths.add("E:/Download/古巨基 - 劲歌金曲.mp3");
+		filePaths.add("E:/Download/古巨基 - 情歌王.mp3");
+		filePaths.add("E:/Download/古巨基 - 情人(live).mp3");
 
 		
 		MusicSheet ms = new MusicSheet();
 		// ms.setUuid("cddc055bfa33439a889cb611c1cb6db2");
-		ms.setCreatorId("2011022");
+		ms.setCreatorId("18020031100");
 		//ms.setPicture("/Users/xiaodong/Music/Beyond/fig-beyond-band.jpg");
 		//ms.setPicture("/Users/xiaodong/Music/guns and roses/fig-guns and roses.jpg");
-		ms.setPicture("/Users/xiaodong/Music/Rock_Chinese/fig-heibao-band.jpg");
+		ms.setPicture("C:/Users/13361/Pictures/Saved Pictures/T002R800x800M000003otvdv2xyQGz.jpg");
 		
-		ms.setCreator("Wang Xiaodong");
-		ms.setName("黑豹乐队的几首歌");
+		ms.setCreator("Yang Yao");
+		ms.setName("古巨基必听的几首歌");
 
 		MusicSheetAndFilesUploader.createMusicSheetAndUploadFiles(url, ms, filePaths);
 	}

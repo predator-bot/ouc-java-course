@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import javax.activation.MimetypesFileTypeMap;
+//import javax.activation.MimetypesFileTypeMap;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.IOUtils;
@@ -93,7 +93,7 @@ public class MusicSheetAndFilesUploader {
 					/**
 					 * 没有传入文件类型，同时根据文件获取不到类型，默认采用application/octet-stream
 					 */
-					contentType = new MimetypesFileTypeMap().getContentType(file);
+					//contentType = new MimetypesFileTypeMap().getContentType(file);
 
 					/**
 					 * contentType非空采用filename匹配默认的图片类型

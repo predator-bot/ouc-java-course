@@ -17,6 +17,7 @@ public class NewMusicSheetDisplayBlock extends JPanel {
 	private static final long serialVersionUID = 1L;
 	private String picPath = "/Users/xiaodong/Music/guns and roses/fig-guns and roses.jpg";
 
+	@SuppressWarnings("deprecation")
 	public NewMusicSheetDisplayBlock() {
 		this.setPreferredSize(new Dimension(550, 250));
 		this.setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -35,13 +36,13 @@ public class NewMusicSheetDisplayBlock extends JPanel {
 		musicSheetInfoPanel.setLayout(new BoxLayout(musicSheetInfoPanel, BoxLayout.Y_AXIS));
 
 		JPanel musicSheetButtonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-		JButton playAllMusicButton = new JButton("æ’­æ”¾å…¨éƒ¨");
-		JButton downloadAllMusicButton = new JButton("ä¸‹è½½å…¨éƒ¨");
+		JButton playAllMusicButton = new JButton("²¥·ÅÈ«²¿");
+		JButton downloadAllMusicButton = new JButton("ÏÂÔØÈ«²¿");
 		musicSheetButtonPanel.add(playAllMusicButton);
 		musicSheetButtonPanel.add(downloadAllMusicButton);
 
-		JLabel musicSheetTitleLabel = new JLabel("æ‚ä¸ƒæ‚å…«çš„æ‘‡æ»š");
-		JLabel musicSheetCreatorLabel = new JLabel("2011022 äº 11æœˆ24æ—¥åˆ›å»º");
+		JLabel musicSheetTitleLabel = new JLabel("ÔÓÆßÔÓ°ËµÄÒ¡¹ö");
+		JLabel musicSheetCreatorLabel = new JLabel("2011022 ÓÚ 11ÔÂ24ÈÕ´´½¨");
 
 		musicSheetInfoPanel.add(Box.createVerticalStrut(20));
 		musicSheetInfoPanel.add(musicSheetTitleLabel);

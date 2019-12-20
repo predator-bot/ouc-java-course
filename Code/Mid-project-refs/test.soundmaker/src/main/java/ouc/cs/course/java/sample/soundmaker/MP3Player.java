@@ -24,7 +24,8 @@ public class MP3Player extends Thread {
 	}
 
 	public static void main(String[] args) {
-		String filename = System.getProperty("user.dir") + "/sound/1234.mp3";
+		//String filename = System.getProperty("user.dir") + "/sound/1234.mp3";
+		String filename="D:/Love U.mp3";
 		MP3Player mp3 = new MP3Player(filename);
 		mp3.start();
 		

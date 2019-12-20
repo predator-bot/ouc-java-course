@@ -19,5 +19,6 @@ public interface MusicSheetDao {
 
 	public List<MusicSheet> findAll() throws SQLException;
 
+	
 	void deleteByUuid(String uuid) throws SQLException;
 }

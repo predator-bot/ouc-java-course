@@ -1,4 +1,4 @@
-package ouc.cs.course.java.httpclient;
+  package ouc.cs.course.java.httpclient;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -80,8 +80,8 @@ public class MusicSheetTaker {
 			ms.setCreator((String) jms.get("creator"));
 			ms.setCreatorId((String) jms.get("creatorId"));
 			ms.setDateCreated((String) jms.get("dateCreated"));
-			ms.setPicture((String) jms.get("picture"));
-			JSONObject mumObj = new JSONObject(jms.get("musicItems"));
+			//ms.setPicture((String) jms.get("picture"));
+			JSONObject mumObj = new JSONObject(jms.get("musicItems").toString());
 			Iterator<String> keys = mumObj.keys();
 			mum = new HashMap<String, String>();
 

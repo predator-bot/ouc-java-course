@@ -1,22 +1,28 @@
 package music.client;
 
+import java.util.Iterator;
+
 import ouc.cs.course.java.httpclient.MusicSheetTaker;
 import ouc.cs.course.java.model.MusicSheet;
 
 /**
- * MusicSheetTaker 测试类
+ * MusicSheetTaker ������
  */
 public class MusicSheetTakerTest {
-	private static final String URL = "http://service.uspacex.com/music.server/queryMusicSheets?type=all";
+	private static final String URL = "http://service.uspacex.com/music.server/queryMusicSheets?type=top20";
 
 	public static void main(String[] args) throws Exception {
 
 		/**
-		 * 查询获取所有音乐单的UUID和名称
+		 * ��ѯ��ȡ�������ֵ���UUID������
 		 * 
 		 */
 		for (MusicSheet ms : MusicSheetTaker.queryMusicSheets(URL)) {
-			System.out.println("[UUID] " + ms.getUuid() + "\t[Music sheet name] " + ms.getName());
+			Iterator<String> it = ms.getMusicItems().keySet().iterator();
+			while(it.hasNext()) {
+				System.out.println(it.next());
+			}
+			//System.out.println("[UUID] " + ms.getUuid() + "\t[Music sheet name] " + ms.getName());
 		}
 
 	}
